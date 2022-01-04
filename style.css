@@ -1,0 +1,17 @@
+form {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+}
+
+.errorMessage {
+	display: none;
+}
+
+.successMessage {
+	display: none;
+}

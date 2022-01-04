@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formularvalidering</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+	
+	<form class="bookingForm">
+		<div class="inputGroup">
+			<label for="firstname">Fornavn</label>
+			<input type="text" id="firstname" name="firstname">
+			<span class="errorMessage firstname">Du skal skrive dit fornavn</span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="lastname">Efternavn</label>
+			<input type="text" id="lastname" name="lastname">
+			<span class="errorMessage lastname">Du skal skrive dit efternavn</span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="email">E-mail</label>
+			<input type="email" name="email" id="email">
+			<span class="errorMessage email">Skriv en gyldig email-adresse</span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="phone">Telefon nr.</label>
+			<input type="tel" name="phone" id="phone">
+			<span class="errorMessage phone">Du skal skrive et gyldigt telefonnummer</span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="seats">Antal personer</label>
+			<input type="number" name="seats" id="seats">
+			<span class="errorMessage seats"></span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="date">Dato</label>
+			<input type="date" name="date" id="date">
+			<span class="errorMessage date">Vælg en gyldig dato</span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="time">Tidspunkt</label>
+			<input type="time" name="time" id="time">
+			<span class="errorMessage time"></span>
+		</div>
+
+		<div class="inputGroup">
+			<label for="message">Besked</label>
+			<textarea name="message" id="message"></textarea>
+			<span class="errorMessage message"></span>
+		</div>
+
+		<button type="submit">Book!</button>
+		<span class="successMessage">Tak for din bookning. Du modtager en kvittering på email eller SMS.</span>
+	</form>
+
+	<script src="/app.js" defer></script>
+</body>
+</html>
